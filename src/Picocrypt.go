@@ -652,7 +652,7 @@ func draw() {
 			giu.Custom(func() {
 				if mode != "decrypt" {
 					giu.Row(
-						giu.Checkbox("Paranoid mode", &paranoid),
+						giu.Checkbox("Paranoid 1mode", &paranoid),
 						giu.Tooltip("Provides the highest level of security attainable"),
 						giu.Dummy(-170, 0),
 						giu.Style().SetDisabled(recursively || !(len(allFiles) > 1 || len(onlyFolders) > 0)).To(
